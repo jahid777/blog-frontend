@@ -8,6 +8,8 @@ import Register from "./Pages/Register/Register";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./Context/Context";
+import Contact from "./Pages/Contact/Contact";
+import About from "./Pages/About/About";
 
 function App() {
   const { user } = useContext(Context);
@@ -29,6 +31,12 @@ function App() {
 
         <Route path="/post:postId">
           <Single />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
       </Switch>
     </Router>

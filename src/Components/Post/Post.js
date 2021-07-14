@@ -19,6 +19,7 @@ const Post = ({ post }) => {
         <hr />
         <span className="postDate">
           {new Date(post.createdAt).toDateString()}
+          <span style={{ marginLeft: "10px" }}>({post.username})</span>
         </span>
       </div>
       <p className="postDesc">{post.desc}</p>
